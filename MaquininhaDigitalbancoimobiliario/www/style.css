@@ -1,0 +1,87 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.titulo-grande {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.topbar {
+    background: #0a84ff;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-btn {
+    background: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+    .icon-btn:hover {
+        background: #e3e3e3;
+    }
+
+.danger {
+    background: #ff4b4b !important;
+    color: white !important;
+}
+
+.wrap {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.card {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    .btn.primary {
+        background: #0a84ff;
+        color: white;
+    }
+
+    .btn.success {
+        background: #2ecc71;
+        color: white;
+    }
+
+    .btn.danger {
+        background: #e74c3c;
+        color: white;
+    }
+
+    .btn.outline {
+        border: 2px solid #0a84ff;
+        color: #0a84ff;
+        background: transparent;
+    }
+
+.players-list li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maquininha Digital</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">💳</span>
+      <h1>Maquininha Digital</h1>
+    </div>
+
+    <div class="controls">
+      <button id="soundToggle" class="icon-btn" title="Som: On/Off">🔊</button>
+      <button id="printBtn" class="icon-btn" title="Imprimir / Exportar">🖨️</button>
+      <button id="finishGameBtn" class="icon-btn" title="Finalizar jogo">🏁</button>
+      <button id="resetBtn" class="icon-btn danger" title="Resetar jogo">♻️</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- Left: controls -->
+    <aside class="panel">
+      <section class="card">
+        <h2>Adicionar jogador</h2>
+        <input id="novoJogador" type="text" placeholder="Nome do jogador" />
+        <div class="row">
+          <button id="addPlayerBtn" class="btn primary">Adicionar</button>
+          <button id="autoFillBtn" class="btn outline">Auto (exemplo)</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Operações</h2>
+        <label>Jogador</label>
+        <select id="jogadorSelect"></select>
+
+        <label>Valor (R$)</label>
+        <input id="valor" type="number" placeholder="Ex: 200" />
+
+        <div class="row">
+          <button id="addSaldoBtn" class="btn success">➕ Adicionar</button>
+          <button id="remSaldoBtn" class="btn danger">➖ Remover</button>
+        </div>
+      </section>
+    </aside>
+
+    <!-- Right: players, ranking, history -->
+    <section class="content">
+      <div class="card big">
+        <div class="header-row">
+          <h2>Jogadores & Saldos</h2>
+          <div class="tools">
+            <button id="leaderRefreshBtn" class="btn outline">Atualizar ranking</button>
+          </div>
+        </div>
+
+        <ul id="listaSaldos" class="players-list"></ul>
+
+        <div class="leaderboard">
+          <h3>Ranking</h3>
+          <ol id="rankingList"></ol>
+        </div>
+
+        <hr />
+
+        <h3>Histórico</h3>
+        <div id="histWrapper" class="history">
+          <ul id="historyList"></ul>
+          <div id="noHistory" class="muted">Nenhuma transação registrada.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <small>Feito com 💙 — Maquininha Digital</small>
+  </footer>
+
+  <!-- script carregado com defer -->
+  <script src="./script.js" defer></script>
+</body>
+</html>
