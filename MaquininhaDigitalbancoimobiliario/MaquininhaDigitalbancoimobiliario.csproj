@@ -36,9 +36,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="www\index.html" />
-    <Content Include="www\script.js" />
-    <Content Include="www\style.css" />
+    <Content Include="index.html" />
+    <Content Include="script.js" />
+    <Content Include="style.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="www\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
